@@ -1,10 +1,10 @@
-package ru.nsu.fit.nsuvolleyball.ui.home
+package ru.nsu.fit.nsuvolleyball.ui.news
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class HomeViewModel : ViewModel() {
+class NewsViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is home Fragment"

@@ -1,4 +1,4 @@
-package ru.nsu.fit.nsuvolleyball.ui.dashboard
+package ru.nsu.fit.nsuvolleyball.ui.games
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import ru.nsu.fit.nsuvolleyball.R
 
-class DashboardFragment : Fragment() {
+class GamesFragment : Fragment() {
 
-    private lateinit var dashboardViewModel: DashboardViewModel
+    private lateinit var gamesViewModel: GamesViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        dashboardViewModel =
-                ViewModelProvider(this).get(DashboardViewModel::class.java)
+        gamesViewModel =
+                ViewModelProvider(this).get(GamesViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_dashboard, container, false)
         val textView: TextView = root.findViewById(R.id.text_dashboard)
-        dashboardViewModel.text.observe(viewLifecycleOwner, Observer {
+        gamesViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

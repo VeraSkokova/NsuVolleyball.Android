@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_games">Игры</string>
+    <string name="title_news">Новости</string>
+    <string name="title_gallery">Галерея</string>
+    <string name="title_team">Команда</string>
+    <string name="title_more">Ещё</string>
+    <string name="title_auth">Войти с помощью ВК</string>
+    <string name="title_notifications">Оповещения</string>
+    <string name="trainings">Тренировки</string>
+    <string name="login_vk">Войти с помощью ВК</string>
+    <string name="logout_vk">Выйти</string>
+</resources>
