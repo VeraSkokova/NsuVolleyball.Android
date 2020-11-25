@@ -1,6 +1,15 @@
 <resources>
-    <string name="app_name">NsuVolleyball</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
+    <string name="app_name" translatable="false">NsuVolleyball</string>
+    <string name="title_games">Games</string>
+    <string name="title_news">News</string>
+    <string name="title_gallery">Gallery</string>
+    <string name="title_team">Team</string>
+    <string name="title_more">More</string>
+    <string name="title_auth">Login with VK</string>
     <string name="title_notifications">Notifications</string>
+    <string name="trainings">Trainings</string>
+    <string name="login_vk">Login with VK</string>
+    <string name="logout_vk">Logout</string>
+
+    <!--<string name="vk_logo_icon_author" translatable="false"><div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Ga</string>-->
 </resources>
