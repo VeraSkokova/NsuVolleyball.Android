@@ -11,5 +11,11 @@
     <string name="login_vk">Login with VK</string>
     <string name="logout_vk">Logout</string>
 
+    <!--Games-->
+    <string name="games_vs" translatable="false">%s vs %s</string>
+    <string name="games_future">Future</string>
+    <string name="games_past">Past</string>
+    <!--Games-->
+
     <!--<string name="vk_logo_icon_author" translatable="false"><div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Ga</string>-->
 </resources>
