@@ -9,17 +9,31 @@
         android:id="@+id/navigation_games"
         android:name="ru.nsu.fit.nsuvolleyball.ui.games.GamesFragment"
         android:label="@string/title_games"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_news" />
 
     <fragment
         android:id="@+id/navigation_news"
         android:name="ru.nsu.fit.nsuvolleyball.ui.news.NewsFragment"
         android:label="@string/title_news"
-        tools:layout="@layout/fragment_games" />
+        tools:layout="@layout/fragment_games" >
+        <action
+            android:id="@+id/action_navigation_news_to_news_details"
+            app:destination="@id/news_details">
+            <argument
+                android:name="newsId"
+                app:argType="integer" />
+
+        </action>
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_more"
         android:name="ru.nsu.fit.nsuvolleyball.ui.more.MoreFragment"
         android:label="@string/title_more"
         tools:layout="@layout/fragment_more" />
+
+    <fragment
+        android:id="@+id/news_details"
+        android:name="ru.nsu.fit.nsuvolleyball.ui.news.NewsDetailsFragment"
+        tools:layout="@layout/fragment_news_details" />
 </navigation>

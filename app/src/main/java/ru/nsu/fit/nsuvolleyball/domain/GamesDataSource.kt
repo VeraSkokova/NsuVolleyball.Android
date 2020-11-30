@@ -2,7 +2,7 @@ package ru.nsu.fit.nsuvolleyball.domain
 
 import ru.nsu.fit.nsuvolleyball.model.Game
 
-class GamesDataSource {
+object GamesDataSource {
     fun getFutureGames(): List<Game> {
         return listOf(
             Game(0, "НГУ", "НГТУ", "16 февраля 18:45", false),

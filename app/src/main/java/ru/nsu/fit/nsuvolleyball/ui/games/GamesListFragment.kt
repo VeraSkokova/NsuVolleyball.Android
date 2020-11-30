@@ -40,7 +40,7 @@ class GamesListFragment: Fragment() {
     }
 
     companion object {
-        val TAB = "tab"
+        const val TAB = "tab"
 
         fun newInstance(tab: Int): GamesListFragment {
             val fragment = GamesListFragment()
