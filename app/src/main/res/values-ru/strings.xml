@@ -10,4 +10,9 @@
     <string name="trainings">Тренировки</string>
     <string name="login_vk">Войти с помощью ВК</string>
     <string name="logout_vk">Выйти</string>
+
+    <!--Games-->
+    <string name="games_future">Будущие</string>
+    <string name="games_past">Прошедшие</string>
+    <!--Games-->
 </resources>

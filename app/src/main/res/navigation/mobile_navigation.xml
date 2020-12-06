@@ -7,15 +7,15 @@
 
     <fragment
         android:id="@+id/navigation_games"
-        android:name="ru.nsu.fit.nsuvolleyball.ui.news.NewsFragment"
+        android:name="ru.nsu.fit.nsuvolleyball.ui.games.GamesFragment"
         android:label="@string/title_games"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_news"
-        android:name="ru.nsu.fit.nsuvolleyball.ui.games.GamesFragment"
+        android:name="ru.nsu.fit.nsuvolleyball.ui.news.NewsFragment"
         android:label="@string/title_news"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_games" />
 
     <fragment
         android:id="@+id/navigation_more"
