@@ -24,10 +24,12 @@
         android:layout_marginEnd="16dp"
         android:textColor="@color/black"
         android:textSize="18sp"
+        android:ellipsize="middle"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/iv_team"
         app:layout_constraintEnd_toStartOf="@id/iv_home"
-        tools:text="НГУ vs НГТУ"/>
+        tools:text="НГУ vs НГТУ"
+        android:singleLine="true" />
 
     <TextView
         android:id="@+id/tv_datetime"

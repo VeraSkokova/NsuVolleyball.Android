@@ -10,8 +10,9 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import ru.nsu.fit.nsuvolleyball.R
+import ru.nsu.fit.nsuvolleyball.ui.utils.GamesViewModelFactory
 
-class GamesListFragment: Fragment() {
+class GamesListFragment : Fragment() {
     private lateinit var gamesViewModel: GamesViewModel
 
     private val gamesAdapter = GamesAdapter()
@@ -23,16 +24,17 @@ class GamesListFragment: Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_games_list, container, false)
 
-        gamesViewModel = ViewModelProvider(this).get(GamesViewModel::class.java)
         val tab = arguments?.getInt(TAB) ?: 0
         val recyclerView = view.findViewById<RecyclerView>(R.id.recycler_view)
         recyclerView.apply {
             layoutManager = LinearLayoutManager(context)
             adapter = gamesAdapter
         }
-        gamesViewModel.getGames(tab).observe(viewLifecycleOwner, Observer {
+        gamesViewModel =
+            ViewModelProvider(this, GamesViewModelFactory(tab)).get(GamesViewModel::class.java)
+        gamesViewModel.liveData.observe(viewLifecycleOwner, Observer {
             if (it != null) {
-                gamesAdapter.bindGames(it)
+                gamesAdapter.bindGames(it.data!!)
             }
         })
 
