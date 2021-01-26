@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
@@ -32,11 +31,9 @@ class GalleryAdapter(): RecyclerView.Adapter<GalleryViewHolder>() {
 }
 
 class GalleryViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-    private val title: TextView = itemView.findViewById(R.id.tv_title)
     private val cover: ImageView = itemView.findViewById(R.id.iv_cover)
 
     fun bind(galleryView: GalleryView) {
-        title.text = galleryView.name
         Glide.with(itemView.context)
             .load(galleryView.url)
             .apply(imageOption)

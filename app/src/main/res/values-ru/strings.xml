@@ -15,4 +15,6 @@
     <string name="games_future">Будущие</string>
     <string name="games_past">Прошедшие</string>
     <!--Games-->
+
+    <string name="loading_error">Что-то пошло не так</string>
 </resources>
